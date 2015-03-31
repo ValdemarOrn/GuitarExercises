@@ -1,0 +1,31 @@
+1. Spider Exercises
+	- Finger dexterity
+	
+2. Picking Patterns
+	Alternate Picking 00112233 000111222333 0000111122223333
+	Gallops 0x000x000x000
+	
+2. Scale Patterns (Major, Minor, Pentatonic)
+	- Whole scales
+		Single, double, triple, quad notes
+	- Scale Patterns
+		123234345456....
+	- String skipping
+	- Legato Exercises
+
+3. Arpeggios
+	- Basic Arpeggios
+		single, double, triple, quad notes
+	- Arpeggio Patterns
+	- String skipping
+	- Sweep Picking
+	
+4. Licks
+	- Convert songs to practice licks
+		Surfaris
+		Mastodon
+		Plug in Baby
+
+5. Inspired by Czerny
+	- Translate Czerny exercises to Guitar
+	

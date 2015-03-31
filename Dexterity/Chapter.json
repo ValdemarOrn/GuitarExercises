@@ -1,0 +1,58 @@
+{
+	"ChapterName" : "Chapter 1: Dexterity",
+	"Lessons": [
+		{
+			"Name" : "Dexterity 1 - Ascending Spider",
+			"Notes" : "Play the pattern on each of the strings.",
+			"Image" : "Dexterity 1.png",
+			"Variations" : [
+				"Variation 1 - Basic Variation",
+				"Variation 2 - Middle Finger Stretch",
+				"Variation 3 - Ring Finger Stretch",
+				"Variation 4 - Pinky Finger Stretch"
+			]
+		},
+		{
+			"Name" : "Dexterity 2 - Vertical Spider",
+			"Image" : "Dexterity 2.png",
+			"Variations" : [
+				"Variation 1 - Basic Variation",
+				"Variation 2 - Finger Permutation Variation"
+			]
+		},
+		{
+			"Name" : "Dexterity 3 - Ascending Triplets",
+			"Image" : "Dexterity 3.png",
+			"Variations" : [
+				"Variation 1 - Index, Middle and Ring finger variation",
+				"Variation 2 - Middle, Ring and pinky finger variation"
+			]
+		},
+		{
+			"Name" : "Dexterity 4 - Back and Forth Triplets",
+			"Image" : "Dexterity 4.png",
+			"Variations" : [
+				"Variation 1 - Basic Variation"
+			]
+		},
+		{
+			"Name" : "Dexterity 5 - Ascending Vertical Triplets",
+			"Image" : "Dexterity 5.png",
+			"Variations" : [
+				"Variation 1 - Permutation 1",
+				"Variation 2 - Permutation 2",
+				"Variation 3 - Permutation 3"
+			]
+		},
+		{
+			"Name" : "Dexterity 6 - Spider Climb Permutations",
+			"Image" : "Dexterity 6.png",
+			"Variations" : [
+				"Variation 1 - Permutation 1",
+				"Variation 2 - Permutation 2",
+				"Variation 3 - Permutation 3",
+				"Variation 4 - Permutation 4"
+			]
+		}
+	]
+}
