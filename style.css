@@ -19,6 +19,7 @@ h3 {
 @media screen {
   body {
     margin: 0 auto;
+    margin-bottom: 50pt;
     width: 100%;
   }
 }
