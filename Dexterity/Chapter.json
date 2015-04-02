@@ -14,7 +14,7 @@
 		},
 		{
 			"Name" : "Dexterity 2 - Vertical Spider",
-			"Description" : "This is a classic chromatic exercise. It can be extended further by playing the 4 notes in every possible permutation, for a total of 24 variations",
+			"Notes" : "This is a classic chromatic exercise. It can be extended further by playing the 4 notes in every possible permutation, for a total of 24 variations",
 			"Image" : "Dexterity 2.png",
 			"Variations" : [
 				"Variation 0 - Basic Variation (only variation show in tab",
@@ -40,7 +40,7 @@
 			]
 		},
 		{
-			"Name" : "Dexterity 5 - Ascending Vertical Triplets",
+			"Name" : "Dexterity 5 - Ascending Vertical Spider",
 			"Image" : "Dexterity 5.png",
 			"Variations" : [
 				"Variation 1 - Permutation 1",
@@ -49,7 +49,7 @@
 			]
 		},
 		{
-			"Name" : "Dexterity 6 - Spider Climb Permutations",
+			"Name" : "Dexterity 6 - Two notes per string Spider Climb",
 			"Image" : "Dexterity 6.png",
 			"Variations" : [
 				"Variation 1 - Permutation 1",
@@ -57,6 +57,86 @@
 				"Variation 3 - Permutation 3",
 				"Variation 4 - Permutation 4"
 			]
-		}
+		},
+		{
+			"Name" : "Dexterity 7 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 7.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 8 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 8.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 9 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 9.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 10 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 10.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 11 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 11.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 12 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 12.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 13 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 13.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 14 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 14.png",
+			"Variations" : [
+				""
+			]
+		},
+		{
+			"Name" : "Dexterity 15 - ",
+			"Notes" : "",
+			"Image" : "Dexterity 15.png",
+			"Variations" : [
+				""
+			]
+		},
+		/*{
+			"Name" : "Dexterity X - ",
+			"Notes" : "",
+			"Image" : "Dexterity 2.pX",
+			"Variations" : [
+				""
+			]
+		},*/
 	]
 }

@@ -1,5 +1,5 @@
 <Query Kind="Program">
-  <Reference>C:\Src\_Tree\Applications\TradePlatform\Debug\LowProfile.Core.dll</Reference>
+  <Reference Relative="LowProfile.Core.dll">&lt;MyDocuments&gt;\GuitarExercises\LowProfile.Core.dll</Reference>
   <NuGetReference>MarkdownSharp</NuGetReference>
   <NuGetReference>Newtonsoft.Json</NuGetReference>
 </Query>
@@ -54,8 +54,8 @@ void ConvertPdfs(string dir)
 {
 	var files = Directory.GetFiles(dir, "*.pdf");
 	
-	//System.Threading.Tasks.Parallel.ForEach(files, file =>
-	foreach (var file in files)
+	System.Threading.Tasks.Parallel.ForEach(files, file =>
+	//foreach (var file in files)
 	{
 		var input = file;
 		var outputFile = Path.GetFileNameWithoutExtension(file) + ".temp.png";
@@ -65,11 +65,11 @@ void ConvertPdfs(string dir)
 		{
 			Console.WriteLine("Regenerating png file for {0}", input); 
 			var cmd = String.Format("convert -density 300 -depth 8 \"{0}\" \"{1}\"", input, output);
-			LowProfile.Core.Utils.ProcessHelper.Run(cmd);
+			LowProfile.Core.Utils.ProcessHelper.Run(cmd, true);
 			CropPng(output, finalOutput);
 			File.Delete(output);
 		}
-	}
+	});
 }
 
 void CropPng(string input, string output)
