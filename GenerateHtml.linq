@@ -1,5 +1,5 @@
 <Query Kind="Program">
-  <Reference Relative="LowProfile.Core.dll">&lt;MyDocuments&gt;\GuitarExercises\LowProfile.Core.dll</Reference>
+  <Reference Relative="LowProfile.Core.dll">C:\Users\Valdemar\Desktop\Exercises\LowProfile.Core.dll</Reference>
   <NuGetReference>MarkdownSharp</NuGetReference>
   <NuGetReference>Newtonsoft.Json</NuGetReference>
 </Query>
@@ -15,6 +15,7 @@ class Lesson
 class Chapter
 {
 	public string Title { get; set; }
+	public string Notes { get; set; }
 	public Lesson[] Lessons { get; set; }
 }
 
@@ -107,9 +108,10 @@ void CropPng(string input, string output)
 string CreateChapterInfo(Chapter chapter)
 {
 	var sb = new StringBuilder();
-	sb.AppendLine("<div class=\"chapterInfo\">");
+	sb.AppendLine("<div class=\"chapter\">");
 	
 	sb.AppendLine("    <h1>" + chapter.Title + "</h1>");
+	sb.AppendLine("    <p>" + chapter.Notes + "</p>");
 	sb.AppendLine("        <ul>");
 	foreach (var lesson in chapter.Lessons)
 		sb.AppendLine("        <li>" + lesson.Name + "</li>");

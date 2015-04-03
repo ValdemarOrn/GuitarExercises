@@ -1,48 +1,61 @@
-﻿body {
+﻿@page {
+  size: auto;
+  margin: 0;
+  padding: 0;
+}
+body {
   margin: 0;
   padding: 0;
   font-family: Garamond;
-  font-size: 12pt;
+}
+div {
+  box-sizing: border-box;
 }
 h1 {
   font-size: 24pt;
   font-weight: 400;
+  margin-left: 10pt;
 }
 h2 {
   font-size: 18pt;
   font-weight: 400;
+  margin-left: 10pt;
 }
 h3 {
   font-size: 14pt;
   font-weight: 400;
+  margin-left: 10pt;
 }
 @media screen {
   body {
     margin: 0 auto;
     margin-bottom: 50pt;
     width: 100%;
+    font-size: 11pt;
   }
 }
 @media screen and (min-width: 1030px) {
   body {
     width: 70%;
     min-width: 1000px;
+    font-size: 12pt;
   }
 }
-@page {
-  size: auto;
-  margin: 0;
-  padding: 0;
-}
-.chapterInfo,
-.lessonInfo {
-  padding: 20pt 20pt 10pt 50pt;
-  box-sizing: border-box;
-}
 @media print {
+  body {
+    font-size: 10pt;
+  }
   .lesson {
     page-break-before: always;
   }
+}
+.chapter {
+  padding: 20pt 50pt 10pt 50pt;
+}
+.chapter p {
+  width: 100%;
+  text-align: justify;
+  margin-left: 20pt;
 }
 @media screen {
   .lesson {
@@ -52,16 +65,27 @@ h3 {
 .lesson {
   margin: 0pt;
 }
-.lesson .leftCol {
-  width: 60%;
+.lesson .lessonInfo {
+  padding: 20pt 50pt 10pt 50pt;
 }
-.lesson .rightCol {
+.lesson .lessonInfo .leftCol {
+  width: 55%;
+  text-wrap: normal;
+  overflow: auto;
+}
+.lesson .lessonInfo .leftCol ul {
+  margin: 0;
+}
+.lesson .lessonInfo .rightCol {
+  text-align: justify;
+  text-wrap: normal;
+  overflow: auto;
   float: right;
-  width: 40%;
+  width: 44%;
 }
 .lesson .imgDiv {
   overflow: hidden;
-  margin: 0px auto;
+  margin: 0 auto;
   width: 95%;
 }
 .lesson .imgDiv img {

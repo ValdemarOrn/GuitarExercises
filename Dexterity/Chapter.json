@@ -1,5 +1,6 @@
 {
-	"Title" : "Chapter 1: Dexterity",
+    "Title": "Chapter 1: Dexterity",
+    "Notes": "This chapter is meant to build up finger dexterity and to instil finger independence in the player. They can be used to warm up during your practice session or to improve finger control where you feel it is lacking. All the exercises in this chapter should be player with alternate picking unless specifically stated.",
 	"Lessons": [
 		{
 			"Name" : "Dexterity 1 - Ascending Spider",
@@ -17,7 +18,7 @@
 			"Notes" : "This is a classic chromatic exercise. It can be extended further by playing the 4 notes in every possible permutation, for a total of 24 variations",
 			"Image" : "Dexterity 2.png",
 			"Variations" : [
-				"Variation 0 - Basic Variation (only variation show in tab",
+				"Variation 0 - Basic Variation (only variation shown)",
 				"Variations of 1 - 1234, 1243, 1324, 1342, 1423, 1432",
 				"Variations of 2 - 2143, 2134, 2341, 2314, 2431, 2413",
 				"Variations of 3 - 3124, 3142, 3214, 3241, 3412, 3421",
@@ -72,7 +73,7 @@
 			]
 		},
 		{
-			"Name" : "Dexterity 8 - Reverse two notes per string stretches",
+			"Name" : "Dexterity 8 - Two notes per string stretches, downwards",
 			"Notes" : "",
 			"Image" : "Dexterity 8.png",
 			"Variations" : [
@@ -83,59 +84,71 @@
 			]
 		},
 		{
-			"Name" : "Dexterity 9 - ",
-			"Notes" : "",
+			"Name" : "Dexterity 9 - String crawl",
+			"Notes" : "A somewhat confusing pattern that requires building up muscle memory to play perfectly",
 			"Image" : "Dexterity 9.png",
 			"Variations" : [
-				""
+				"Variation 1 - Upwards pattern",
+				"Variation 2 - Downwards pattern"
 			]
 		},
 		{
-			"Name" : "Dexterity 10 - ",
-			"Notes" : "",
+			"Name" : "Dexterity 10 - Sweeping patterns",
+			"Notes" : "Play these exercises with a sweep picking motion.",
 			"Image" : "Dexterity 10.png",
 			"Variations" : [
-				""
+				"Variation 1 - Upwards ascending pattern",
+				"Variation 2 - Downwards ascending pattern"
 			]
 		},
 		{
-			"Name" : "Dexterity 11 - ",
+			"Name" : "Dexterity 11 - String skipping stretches",
 			"Notes" : "",
 			"Image" : "Dexterity 11.png",
 			"Variations" : [
-				""
+				"Variation 1 - Upwards pattern",
+				"Variation 2 - Downwards pattern"
 			]
 		},
 		{
-			"Name" : "Dexterity 12 - ",
+			"Name" : "Dexterity 12 - Pinky finger workout",
 			"Notes" : "",
 			"Image" : "Dexterity 12.png",
 			"Variations" : [
-				""
+				"Variation 1 - Basic variation"
 			]
 		},
 		{
-			"Name" : "Dexterity 13 - ",
+			"Name" : "Dexterity 13 - Four finger workout",
 			"Notes" : "",
 			"Image" : "Dexterity 13.png",
 			"Variations" : [
-				""
+				"Variation 1 - Single note jump",
+				"Variation 2 - Double note jump"
 			]
 		},
 		{
-			"Name" : "Dexterity 14 - ",
+			"Name" : "Dexterity 14 - Triple finger workout",
 			"Notes" : "",
 			"Image" : "Dexterity 14.png",
 			"Variations" : [
-				""
+				"Variation 1 - 123: Easy Mode",
+				"Variation 2 - 234: Pinky Workout",
+				"Variation 3 - 124: Pinky Skip",
+				"Variation 4 - 134: Middle Finger Skip",
+				"Variation 5 - 135: Big Stretch"
 			]
 		},
 		{
-			"Name" : "Dexterity 15 - ",
+			"Name" : "Dexterity 15 - Triple finger workout in Reverse",
 			"Notes" : "",
 			"Image" : "Dexterity 15.png",
 			"Variations" : [
-				""
+				"Variation 1 - 321: Easy Mode",
+				"Variation 2 - 432: Pinky Workout",
+				"Variation 3 - 421: Pinky Skip",
+				"Variation 4 - 431: Middle Finger Skip",
+				"Variation 5 - 531: Big Stretch"
 			]
 		},
 		/*{
