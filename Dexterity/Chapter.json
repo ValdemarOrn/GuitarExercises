@@ -1,5 +1,5 @@
 {
-	"ChapterName" : "Chapter 1: Dexterity",
+	"Title" : "Chapter 1: Dexterity",
 	"Lessons": [
 		{
 			"Name" : "Dexterity 1 - Ascending Spider",
@@ -59,19 +59,25 @@
 			]
 		},
 		{
-			"Name" : "Dexterity 7 - ",
+			"Name" : "Dexterity 7 - Two notes per string stretches",
 			"Notes" : "",
 			"Image" : "Dexterity 7.png",
 			"Variations" : [
-				""
+				"Variation 1 - 1 Note jumps",
+				"Variation 2 - 2 Note jumps",
+				"Variation 3 - 3 Note jumps",
+				"Variation 4 - 4 Note jumps",
 			]
 		},
 		{
-			"Name" : "Dexterity 8 - ",
+			"Name" : "Dexterity 8 - Reverse two notes per string stretches",
 			"Notes" : "",
 			"Image" : "Dexterity 8.png",
 			"Variations" : [
-				""
+				"Variation 1 - 1 Note jumps",
+				"Variation 2 - 2 Note jumps",
+				"Variation 3 - 3 Note jumps",
+				"Variation 4 - 4 Note jumps",
 			]
 		},
 		{

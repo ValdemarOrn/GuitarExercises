@@ -14,7 +14,7 @@ class Lesson
 
 class Chapter
 {
-	public string ChapterName { get; set; }
+	public string Title { get; set; }
 	public Lesson[] Lessons { get; set; }
 }
 
@@ -109,7 +109,7 @@ string CreateChapterInfo(Chapter chapter)
 	var sb = new StringBuilder();
 	sb.AppendLine("<div class=\"chapterInfo\">");
 	
-	sb.AppendLine("    <h1>" + chapter.ChapterName + "</h1>");
+	sb.AppendLine("    <h1>" + chapter.Title + "</h1>");
 	sb.AppendLine("        <ul>");
 	foreach (var lesson in chapter.Lessons)
 		sb.AppendLine("        <li>" + lesson.Name + "</li>");
@@ -153,12 +153,12 @@ Dictionary<string, string> CreateLessonHtmlParts(string dir, Chapter chapter)
 	return output;
 }
 
-string GenerateChapterFile(string chapterInfo, Dictionary<string, string> lessons)
+string GenerateChapterFile(string title, string chapterInfo, Dictionary<string, string> lessons)
 {
 	var sb = new StringBuilder();
 	sb.AppendLine("<html>");
 	sb.AppendLine("<head>");
-	sb.AppendLine("<title>Chapter X</title>");
+	sb.AppendLine("<title>" + title + "</title>");
 	sb.AppendLine("<link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\">");
 	sb.AppendLine("</head>");
 	sb.AppendLine("<body>");
@@ -189,7 +189,7 @@ void Main()
 		ConvertPdfs(dir);
 		var chapterInfo = CreateChapterInfo(chapter);
 		var lessonParts = CreateLessonHtmlParts(dir, chapter);
-		var htmlFile = GenerateChapterFile(chapterInfo, lessonParts);
+		var htmlFile = GenerateChapterFile(chapter.Title, chapterInfo, lessonParts);
 		File.WriteAllText(Path.Combine(dir, "Chapter.html"), htmlFile);
 	}
 }
