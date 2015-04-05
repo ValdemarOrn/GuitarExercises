@@ -7,7 +7,6 @@
 	- Scale Patterns
 		123234345456....
 	- String skipping
-	- Legato Exercises
 
 3. Arpeggios
 	- Basic Arpeggios
@@ -20,7 +19,7 @@
 	Alternate Picking 00112233 000111222333 0000111122223333
 	Gallops 0x000x000x000
 	trills - http://www.ultimate-guitar.com/lessons/guitar_techniques/10_minute_daily_shred_workout.html
-
+	More string skipping - http://www.fretjam.com/string-skipping-exercises.html
 
 5. Legato
 	Hammer ons and pull offs
