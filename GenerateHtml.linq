@@ -180,7 +180,7 @@ string GenerateChapterFile(string title, string chapterInfo, Dictionary<string, 
 void Main()
 {
 	var baseDir = Path.GetDirectoryName(Util.CurrentQueryPath);
-	var chapters = new[] { "Dexterity" };
+	var chapters = new[] { "Dexterity", "Scales" };
 	
 	foreach (var chapterName in chapters)
 	{
