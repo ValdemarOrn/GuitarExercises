@@ -19,13 +19,16 @@
 4. Picking Patterns
 	Alternate Picking 00112233 000111222333 0000111122223333
 	Gallops 0x000x000x000
+	trills - http://www.ultimate-guitar.com/lessons/guitar_techniques/10_minute_daily_shred_workout.html
 
-5. Licks
+
+5. Legato
+	Hammer ons and pull offs
+	Sweeps and hammer ons - http://www.ultimate-guitar.com/lessons/guitar_techniques/10_minute_daily_shred_workout.html
+
+6. Licks
 	- Convert songs to practice licks
 		Surfaris
 		Mastodon
 		Plug in Baby
-
-6. Inspired by Czerny
-	- Translate Czerny exercises to Guitar
 	
