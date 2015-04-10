@@ -151,13 +151,22 @@
 				"e) 531: Big Stretch"
 			]
 		},
-		/*{
-			"Name" : "Dexterity X - ",
+        {
+            "Name": "Dexterity 16 - Picking Patterns",
+            "Notes": "",
+            "Image": "Dexterity 16.png",
+            "Variations": [
+                "a) Gallop Pattern",
+                "b) Palm Muting Pattern"
+            ]
+        },
+        {
+			"Name" : "Dexterity 17 - 16th Note Picking Exercise",
 			"Notes" : "",
-			"Image" : "Dexterity 2.pX",
+			"Image" : "Dexterity 17.png",
 			"Variations" : [
-				""
+				"a) Speed Picking Pattern"
 			]
-		},*/
+		},
 	]
 }

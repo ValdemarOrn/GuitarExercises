@@ -1,29 +1,26 @@
-1. Spider Exercises
+1. Dexterity Exercises
 	- Finger dexterity
 
 2. Scale Patterns (Major, Minor, Pentatonic)
-	- Whole scales
-		Single, double, triple, quad notes
-	- Scale Patterns
-		123234345456....
-	- String skipping
+	To add:
+	- More extreme string skipping exercises (strings 1-4, 1-5, 1-6) - http://musicdiscipline.com/lead-guitar/string-skipping-horizontal-major-scale/
 
 3. Arpeggios
-	- Basic Arpeggios
-		single, double, triple, quad notes
-	- Arpeggio Patterns
-	- String skipping
+	http://musicdiscipline.com/lead-guitar/triadic-arpeggios/58/
+	- Basic Arpeggios - http://www.ultimate-guitar.com/lessons/guitar_techniques/what_is_an_arpeggio.html
+		2 Note Per String Arpeggios
+		Sweep Arpeggios
+	- String skipping - http://musicdiscipline.com/lead-guitar/triadic-arpeggios-string-skipping/
 	- Sweep Picking
-	
-4. Picking Patterns
-	Alternate Picking 00112233 000111222333 0000111122223333
-	Gallops 0x000x000x000
-	trills - http://www.ultimate-guitar.com/lessons/guitar_techniques/10_minute_daily_shred_workout.html
-	More string skipping - http://www.fretjam.com/string-skipping-exercises.html
 
-5. Legato
+4. Legato
 	Hammer ons and pull offs
 	Sweeps and hammer ons - http://www.ultimate-guitar.com/lessons/guitar_techniques/10_minute_daily_shred_workout.html
+	trills - http://www.ultimate-guitar.com/lessons/guitar_techniques/10_minute_daily_shred_workout.html
+	
+5. Picking Patterns
+	Alternate Picking 00112233 000111222333 0000111122223333
+	More string skipping - http://www.fretjam.com/string-skipping-exercises.html
 
 6. Licks
 	- Convert songs to practice licks
