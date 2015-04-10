@@ -8,12 +8,17 @@
             "Image": "Scales 1.png",
             "Variations": [
                 "a) 3 Note Pattern",
-                "2a) 3 Note Pattern, Hammer-ons and pull-offs, sweep picking",
+                "2a) 3 Note Pattern, Hammer-ons and pull-offs, sweep",
                 "b) 1st Position (E Shape)",
                 "c) 2nd Position (D Shape)",
                 "d) 3rd Position (C Shape)",
                 "e) 4th Position (A Shape)",
                 "f) 5th Position (G Shape)"
+            ],
+            "DiagramColumns" : 2,
+            "Diagrams": [
+                { "FromFret": 0, "ToFret": 12, "Notes": "6,5,Red;6,7;6,9; 5,5;5,7;5,9; 4,6;4,7,Red;4,9; 3,6;3,7;3,9; 2,7;2,9;2,10,Red; 1,7;1,9;1,10" },
+                { "FromFret": 0, "ToFret": 12, "Notes": "6,4;6,5,Red;6,7; 5,4;5,5;5,7; 4,4;4,6;4,7,Red; 3,4;3,6;3,7; 2,5;2,7; 1,4;1,5,Red;1,7" },
             ]
         },
         {
@@ -22,7 +27,7 @@
             "Image": "Scales 2.png",
             "Variations": [
                 "a) 3 Note Pattern",
-                "2a) 3 Note Pattern, Hammer-ons and pull-offs, sweep picking",
+                "2a) 3 Note Pattern, Hammer-ons and pull-offs, sweep",
                 "b) 1st Position (E Shape)",
                 "c) 2nd Position (D Shape)",
                 "d) 3rd Position (C Shape)",
@@ -36,7 +41,7 @@
             "Image": "Scales 3.png",
             "Variations": [
                 "a) 1st Position",
-                "2a) 1st Position, Hammer-ons and pull-offs, sweep picking",
+                "2a) 1st Position, Hammer-ons and pull-offs, sweep",
                 "b) 2nd Position",
                 "c) 3rd Position",
                 "d) 4th Position",
@@ -49,7 +54,7 @@
             "Image": "Scales 4.png",
             "Variations": [
                 "a) 1st Position",
-                "2a) 1st Position, Hammer-ons and pull-offs, sweep picking",
+                "2a) 1st Position, Hammer-ons and pull-offs, sweep",
                 "b) 2nd Position",
                 "c) 3rd Position",
                 "d) 4th Position",

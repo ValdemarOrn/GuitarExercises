@@ -89,6 +89,7 @@ var fretboardify = (function() {
 	function parseNotes(notesString) {
 		// 1,2,orange,R;2,4,blue;3,4,blue;4,4,,R
 		var notes = notesString.split(';');
+		var output = [];
 		for (var i = 0; i < notes.length; i++) {
 			var note = {};
 			var parts = notes[i].split(',');
@@ -106,10 +107,10 @@ var fretboardify = (function() {
 					note.caption = parts[3];
 			}
 
-			notes[i] = note;
+			output.push(note);
 		}
 
-		return notes;
+		return output;
 	}
 
 	// ---------------------------------------------------------------------------------------------------------
@@ -127,7 +128,7 @@ var fretboardify = (function() {
 	    this.toFret = configuration.toFret;
 	    this.stringCount = configuration.stringCount;
         this.lefty = configuration.lefty;
-        this.tuning = configuration.tuning;
+        this.tuning = configuration.tuning.reverse();
         this.useFlats = configuration.useFlats;
         this.defaultColor = configuration.defaultColor;
         this.showNotesByDefault = configuration.showNotesByDefault;
@@ -144,8 +145,7 @@ var fretboardify = (function() {
 
 	fretboard.prototype.init = function() {
 		var svg = document.createElementNS(svgns, "svg");
-		svg.setAttributeNS(null, "width", this.width);
-		svg.setAttributeNS(null, "height", this.height);
+		svg.setAttributeNS(null, "viewBox", "0 0 " + this.width + " " + this.height);
 		this.element.appendChild(svg);
 
 		var g = document.createElementNS(svgns, "g");
@@ -158,25 +158,43 @@ var fretboardify = (function() {
     	var svg = this.svg;
     	var frets = this.toFret - this.fromFret + 1;
 
-    	for (var i = 0; i < frets; i++) {
-    		var dx = this.lefty
+    	for (var i = 1; i < frets; i++) {
+			var fret = this.fromFret + i;
+			var dx = this.lefty
 				? (this.frets + 1 - i - 0.5) * fretDx
 				: (i - 0.5) * fretDx;
     		var dyText = (this.stringCount - 1) * stringDx;
     		var dyMarker = (this.stringCount - 1) * stringDx / 2;
-    		var fret = this.fromFret + i;
+    		
     		var show = fretMarks.indexOf(fret) > -1;
     		if (!show)
     			continue;
 
-    		var dot = document.createElementNS(svgns, 'circle');
-    		dot.setAttributeNS(null, 'cx', dx);
-    		dot.setAttributeNS(null, 'cy', dyMarker);
-    		dot.setAttributeNS(null, 'r', stringDx * 0.3);
-    		dot.setAttributeNS(null, 'fill', fretMarkerColor);
-    		svg.appendChild(dot);
+		    if (fret == 12 || fret == 24) {
+			    var dot = document.createElementNS(svgns, 'circle');
+			    dot.setAttributeNS(null, 'cx', dx);
+			    dot.setAttributeNS(null, 'cy', dyMarker + (this.stringCount / 4) * stringDx);
+			    dot.setAttributeNS(null, 'r', stringDx * 0.3);
+			    dot.setAttributeNS(null, 'fill', fretMarkerColor);
+			    svg.appendChild(dot);
 
-    		var text = document.createElementNS(svgns, 'text');
+			    var dot = document.createElementNS(svgns, 'circle');
+			    dot.setAttributeNS(null, 'cx', dx);
+			    dot.setAttributeNS(null, 'cy', dyMarker - (this.stringCount / 4) * stringDx);
+			    dot.setAttributeNS(null, 'r', stringDx * 0.3);
+			    dot.setAttributeNS(null, 'fill', fretMarkerColor);
+			    svg.appendChild(dot);
+		    }
+		    else {
+		    	var dot = document.createElementNS(svgns, 'circle');
+		    	dot.setAttributeNS(null, 'cx', dx);
+		    	dot.setAttributeNS(null, 'cy', dyMarker);
+		    	dot.setAttributeNS(null, 'r', stringDx * 0.3);
+		    	dot.setAttributeNS(null, 'fill', fretMarkerColor);
+		    	svg.appendChild(dot);
+		    }
+
+		    var text = document.createElementNS(svgns, 'text');
     		text.setAttributeNS(null, 'x', dx);
     		text.setAttributeNS(null, 'y', dyText);
     		text.setAttributeNS(null, 'text-anchor', 'middle');
@@ -267,15 +285,22 @@ var fretboardify = (function() {
 			noteColor = 'black';
 			fret = 0;
 			color = 'transparent';
+		} 
+		else {
+
+			if (this.stringCount < string) return;
+			if (this.fromFret != 0 && fret <= this.fromFret) return;
+			if (fret > this.toFret) return;
+
+			if (typeof(noteObject.caption) === 'string')
+				caption = noteObject.caption;
+			else
+				caption = this.getNote(string, fret);
 		}
-		else if (typeof(noteObject.caption) === 'string')
-			caption = noteObject.caption;
-		else
-			caption = this.getNote(string, fret);
 
 		var dx = this.lefty
-			? (this.frets - (fret - 0.5)) * fretDx
-			: (fret - 0.5) * fretDx;
+			? (this.frets - fret + 0.5 + this.fromFret) * fretDx
+			: (fret - 0.5 - this.fromFret) * fretDx;
 
 		var dy = (string - 1) * stringDx;
 
@@ -305,12 +330,6 @@ var fretboardify = (function() {
 		for (var i = 0; i < notes.length; i++) {
 			x.drawNote(notes[i]);
 		}
-        /*x.drawNote(1, 0);
-        x.drawNote(1, 3);
-        x.drawNote(2, 4);
-        x.drawNote(3, 1);
-        x.drawNote(4, 'x');
-        x.drawNote(5, 6);*/
     }
     
     function setConfiguration(configuration) {

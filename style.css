@@ -83,6 +83,20 @@ h3 {
   float: right;
   width: 44%;
 }
+.lesson .diagrams {
+  padding-top: 20pt;
+  text-align: center;
+  page-break-inside: avoid;
+  margin: 0 auto;
+  width: 95%;
+}
+.lesson .diagrams .col2 {
+  width: 49%;
+}
+.lesson .diagrams .fretboard {
+  display: inline-block;
+  overflow: hidden;
+}
 .lesson .imgDiv {
   overflow: hidden;
   margin: 0 auto;

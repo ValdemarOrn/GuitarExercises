@@ -4,12 +4,21 @@
   <NuGetReference>Newtonsoft.Json</NuGetReference>
 </Query>
 
+class Diagram
+{
+	public int FromFret { get; set; }
+	public int ToFret { get; set; }
+	public string Notes { get; set; }
+}
+
 class Lesson
 {
 	public string Name { get; set; } 
 	public string Notes { get; set; } 
 	public string Image { get; set; } 
 	public string[] Variations { get; set; } 
+	public int DiagramColumns { get; set; }
+	public Diagram[] Diagrams { get; set; }
 }
 
 class Chapter
@@ -124,6 +133,8 @@ Dictionary<string, string> CreateLessonHtmlParts(string dir, Chapter chapter)
 {
 	var output = new Dictionary<string, string>();
 	Console.WriteLine("Creating Html templates for {0} lessons", chapter.Lessons.Length);
+	var diagramFormatString = @"        <div class=""fretboard {3}"" data-fromfret=""{0}"" data-tofret=""{1}"" data-notes=""{2}""></div>";
+	
 	foreach (var lesson in chapter.Lessons)
 	{
 		var png = Path.Combine(dir, lesson.Image);
@@ -147,6 +158,17 @@ Dictionary<string, string> CreateLessonHtmlParts(string dir, Chapter chapter)
 		sb.AppendLine(string.Format("        <img class=\"lessonImg\" src=\"{0}\">", png));
 		sb.AppendLine("    </div>");
 		
+		sb.AppendLine("    <div class=\"diagrams\">");
+		foreach (var diagram in lesson.Diagrams ?? new Diagram[0])
+		{
+			sb.AppendLine(string.Format(diagramFormatString, 
+				diagram.FromFret, 
+				diagram.ToFret, 
+				diagram.Notes, 
+				"col" + lesson.DiagramColumns));
+		}
+		sb.AppendLine("    </div>");
+		
 		sb.AppendLine("</div>");
 		
 		output[header] = sb.ToString();
@@ -162,8 +184,10 @@ string GenerateChapterFile(string title, string chapterInfo, Dictionary<string, 
 	sb.AppendLine("<head>");
 	sb.AppendLine("<title>" + title + "</title>");
 	sb.AppendLine("<link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\">");
+	sb.AppendLine("<script type=\"text/javascript\" src=\"../Fretboardify.js\"></script>");
 	sb.AppendLine("</head>");
 	sb.AppendLine("<body>");
+	sb.AppendLine("<script>fretboardify.setConfiguration({ lefty: false, strings: 6, defaultColor: 'blue' });</script>");
 	
 	sb.AppendLine(chapterInfo);
 	
