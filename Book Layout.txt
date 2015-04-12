@@ -4,6 +4,7 @@
 2. Scale Patterns (Major, Minor, Pentatonic)
 	To add:
 	- More extreme string skipping exercises (strings 1-4, 1-5, 1-6) - http://musicdiscipline.com/lead-guitar/string-skipping-horizontal-major-scale/
+	- Exercise 6-10: 6 note patterns
 
 3. Arpeggios
 	

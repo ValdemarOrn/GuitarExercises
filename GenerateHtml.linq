@@ -158,16 +158,19 @@ Dictionary<string, string> CreateLessonHtmlParts(string dir, Chapter chapter)
 		sb.AppendLine(string.Format("        <img class=\"lessonImg\" src=\"{0}\">", png));
 		sb.AppendLine("    </div>");
 		
-		sb.AppendLine("    <div class=\"diagrams\">");
-		foreach (var diagram in lesson.Diagrams ?? new Diagram[0])
+		if (lesson.Diagrams != null && lesson.Diagrams.Any())
 		{
-			sb.AppendLine(string.Format(diagramFormatString, 
-				diagram.FromFret, 
-				diagram.ToFret, 
-				diagram.Notes, 
-				"col" + lesson.DiagramColumns));
+			sb.AppendLine("    <div class=\"diagrams\">");
+			foreach (var diagram in lesson.Diagrams)
+			{
+				sb.AppendLine(string.Format(diagramFormatString, 
+					diagram.FromFret, 
+					diagram.ToFret, 
+					diagram.Notes, 
+					"col" + lesson.DiagramColumns));
+			}
+			sb.AppendLine("    </div>");
 		}
-		sb.AppendLine("    </div>");
 		
 		sb.AppendLine("</div>");
 		
@@ -204,7 +207,7 @@ string GenerateChapterFile(string title, string chapterInfo, Dictionary<string, 
 void Main()
 {
 	var baseDir = Path.GetDirectoryName(Util.CurrentQueryPath);
-	var chapters = new[] { "Dexterity", "Scales" };
+	var chapters = new[] { "Dexterity", "Scales", "Arpeggios" };
 	
 	foreach (var chapterName in chapters)
 	{

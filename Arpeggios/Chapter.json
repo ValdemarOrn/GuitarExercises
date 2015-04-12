@@ -1,0 +1,123 @@
+{
+    "Title": "Chapter 3: Arpeggios",
+    "Notes": "This chapter starts off by showing some basic arpeggio shapes (Major, Minor, Major 7th, Minor 7th) and then continues on with a collection of arpeggio-based licks and lessons. Note that the picking pattern for these exercises is left up to the player to choose, yet economy and sweep picking techniques should be preferred.",
+    "Lessons": [
+        {
+            "Name": "Arpeggios 1 - Major Arpeggio Patterns",
+            "Notes": "For additional variations, try shifting the patterns up by 5 halftones (to the 10th fret).",
+            "Image": "Arpeggios 1.png",
+            "Variations": [
+                "a) A Maj (E Shape)",
+                "b) D Maj (A Shape)",
+                "c) G Maj (D Shape)",
+                "d) A Maj (G Shape)",
+                "e) D Maj (C Shape)"
+            ],
+            "DiagramColumns" : 2,
+            "Diagrams": [
+
+            ]
+        },
+        {
+            "Name": "Arpeggios 2 - Minor Arpeggio Patterns",
+            "Notes": "For additional variations, try shifting the patterns up by 5 halftones (to the 10th fret).",
+            "Image": "Arpeggios 2.png",
+            "Variations": [
+                "a) A Min (E Shape)",
+                "b) D Min (A Shape)",
+                "c) G Min (D Shape)",
+                "d) A Min (G Shape)",
+                "e) D Min (C Shape)"
+            ],
+            "DiagramColumns": 2,
+            "Diagrams": [
+
+            ]
+        },
+        {
+            "Name": "Arpeggios 3 - Major 7th Arpeggio Patterns",
+            "Notes": "For additional variations, try shifting the patterns up by 5 halftones (to the 10th fret).",
+            "Image": "Arpeggios 3.png",
+            "Variations": [
+                "a) A Maj 7th (E Shape)",
+                "b) D Maj 7th (A Shape)",
+                "c) G Maj 7th (D Shape)",
+                "d) A Maj 7th (G Shape)",
+                "e) D Maj 7th (C Shape)"
+            ],
+            "DiagramColumns": 2,
+            "Diagrams": [
+
+            ]
+        },
+        {
+            "Name": "Arpeggios 4 - Minor 7th Arpeggio Patterns",
+            "Notes": "For additional variations, try shifting the patterns up by 5 halftones (to the 10th fret).",
+            "Image": "Arpeggios 4.png",
+            "Variations": [
+                "a) A Min 7th (E Shape)",
+                "b) D Min 7th (A Shape)",
+                "c) G Min 7th (D Shape)",
+                "d) A Min 7th (G Shape)",
+                "e) D Min 7th (C Shape)"
+            ],
+            "DiagramColumns": 2,
+            "Diagrams": [
+
+            ]
+        },
+        {
+            "Name": "Arpeggios 5 - 3-6 Note Patterns",
+            "Notes": "",
+            "Image": "Arpeggios 5.png",
+            "Variations": [
+                "a) 3 Note Pattern",
+                "b) 4 Note Pattern",
+                "c) 5 Note Pattern",
+                "d) 6 Note Pattern"
+            ],
+            "DiagramColumns": 2,
+            "Diagrams": [
+
+            ]
+        },
+        {
+            "Name": "Arpeggios 6 - Arpeggio Patterns 1",
+            "Notes": "",
+            "Image": "Arpeggios 6.png",
+            "Variations": [
+                "a) Simple Arpeggio Pattern",
+                "b) Arpeggiated Chord Progression",
+                "c) 3 Note Pattern"
+            ],
+            "DiagramColumns": 2,
+            "Diagrams": [
+
+            ]
+        },
+        {
+            "Name": "Arpeggios 7 - Scale-Arpeggio Combinations",
+            "Notes": "This exercise comes from Will Wallner's Guitar World article:<br/><a href=\"http://www.guitarworld.com/bent-out-shape-improve-your-fretboard-knowledge-arpeggio-exercise\">Bent Out of Shape: Improve Your Fretboard Knowledge with This Arpeggio Exercise</a>",
+            "Image": "Arpeggios 7.png",
+            "Variations": [
+                "a) Scale-Arpeggio Exercise"
+            ],
+            "DiagramColumns": 2,
+            "Diagrams": [
+
+            ]
+        },
+        {
+            "Name": "Arpeggios 8 - String-skipping Arpeggio Patterns",
+            "Notes": "",
+            "Image": "Arpeggios 8.png",
+            "Variations": [
+                "a) Pattern A"
+            ],
+            "DiagramColumns" : 2,
+            "Diagrams": [
+
+            ]
+        }
+    ]
+}
