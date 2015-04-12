@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Fretboard Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="Fretboardify.js"></script>
+    
+</head>
+    <body>
+        <div class="lesson">
+            <div class="diagrams">
+                <div class="diagram">
+                    <div class="fretboard" style="border: 1px solid black; box-sizing: content-box" data-fromfret="0" data-tofret="24" data-notes=""></div>
+                </div>
+            </div>
+        </div>
+        <div style="margin: 0 auto; text-align: center; padding: 10px;">
+            <input type="text" id="textbox" style="width:700px" />
+        </div>
+        <script>
+            fretboardify.setConfiguration({ lefty: false, strings: 6, defaultColor: 'Black' });
+
+            var notes = [];
+            var noteString = "";
+            var b = document.getElementsByClassName("fretboard")[0];
+            var textbox = document.getElementById("textbox");
+
+            function toggleNote(note) {
+                var index = notes.indexOf(note);
+                if (index > -1)
+                    notes.splice(index, 1);
+                else
+                    notes.push(note);
+
+                notes.sort(function (a, b) {
+                    var stringA = a.split(',')[0];
+                    var fretA = a.split(',')[1];
+                    var stringB = b.split(',')[0];
+                    var fretB = b.split(',')[1];
+
+                    var aa = (10 - parseInt(stringA)) * 100 + parseInt(fretA);
+                    var bb = (10 - parseInt(stringB)) * 100 + parseInt(fretB);
+
+                    return aa > bb;
+                });
+
+                console.log(notes);
+            }
+
+            function refresh() {
+
+                noteString = "";
+                for (var i = 0; i < notes.length; i++) {
+                    noteString += notes[i] + ";";
+                }
+                noteString = noteString.substr(0, noteString.length - 1);
+                textbox.value = noteString;
+                b.setAttribute("data-notes", noteString);
+                var svg = b.getElementsByTagName("svg")[0];
+                b.removeChild(svg);
+                fretboardify.makeFretboard(b);
+            }
+
+            function handler(ev) {
+                ev.preventDefault();
+                var x = ev.clientX - b.getBoundingClientRect().left;
+                var y = ev.clientY - b.getBoundingClientRect().top;
+
+                var fret = Math.floor((x - 0) / 40);
+                var string = Math.floor((y - 40 + 12) / 24) + 1;
+                if (fret < 0 || fret > 24) return;
+                if (string < 1 || string > 6) return;
+
+                var val = string + "," + fret;
+
+                if (ev.shiftKey) {
+                    val += ",Red";
+                    if (ev.ctrlKey) val += ",R";
+                }
+                else if (ev.ctrlKey) val += ",,R";
+
+                toggleNote(val);
+                refresh();
+            }
+            b.addEventListener("click", handler);
+
+            
+
+        </script>
+
+    </body>
+</html>

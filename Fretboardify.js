@@ -124,7 +124,9 @@ var fretboardify = (function() {
 	    if (configOverrides)
             applyValues(configuration, configOverrides);
         
-	    this.fromFret = configuration.fromFret;
+    	// We add one additional lower fret in order to see the fret "range" of the lowest fret.
+		// The "fromFret" specified the actual wire fret from which we draw.
+	    this.fromFret = configuration.fromFret > 0 ? configuration.fromFret - 1: 0;
 	    this.toFret = configuration.toFret;
 	    this.stringCount = configuration.stringCount;
         this.lefty = configuration.lefty;
@@ -138,7 +140,7 @@ var fretboardify = (function() {
         this.width = this.frets * fretDx + 2 * paddingX;
         this.height = (this.stringCount - 1) * stringDx + 2 * paddingY;
         
-        this.svg = this.init(this.element, this.width, this.height);
+        this.svg = this.init();
         if (this.showFretNumbers)
             this.drawFretNumbers();
     }
@@ -324,9 +326,13 @@ var fretboardify = (function() {
 		svg.appendChild(text);
 	};
     
-	function makeFretboard(htmlElement, config, notes) {
-        var x = new fretboard(htmlElement, config);
-        x.drawBase();
+	function makeFretboard(element) {
+
+		var notes = parseNotes(element.getAttribute("data-notes"));
+		var configOverride = getConfigOverrides(element);
+		var x = new fretboard(element, configOverride);
+		x.drawBase();
+
 		for (var i = 0; i < notes.length; i++) {
 			x.drawNote(notes[i]);
 		}
@@ -335,15 +341,13 @@ var fretboardify = (function() {
     function setConfiguration(configuration) {
 	    applyValues(defaultConfiguration, configuration);
     }
-
+	
     document.addEventListener('DOMContentLoaded', function () {
 
 	    var elements = document.getElementsByClassName("fretboard");
 	    for (var i = 0; i < elements.length; i++) {
 	    	var element = elements[i];
-	    	var notes = parseNotes(element.getAttribute("data-notes"));
-	    	var configOverride = getConfigOverrides(element);
-	    	makeFretboard(element, configOverride, notes);
+	    	makeFretboard(element);
 	    }
         
     });

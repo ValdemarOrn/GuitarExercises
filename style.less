@@ -6,7 +6,16 @@
 
 @mainPadding: 20pt 50pt 10pt 50pt;
 
+.noselect() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
+    .noselect();
     margin: 0;
     padding: 0;
     font-family: Garamond;
@@ -104,20 +113,30 @@ a:hover { color: #888; }
     .diagrams {
         padding-top: 20pt;
         text-align: center;
-        //border: 1px solid red;
         page-break-inside: avoid;
-
         margin: 0 auto;
         width: 95%;
 
-        .col2 {
-            width: 49%;
-        }
-
-        .fretboard {
+        .diagram { 
             display: inline-block;
-            overflow: hidden;
+            //border: 1px solid red;
+            position: relative;
+
+            p {
+                position: absolute;
+                margin: 0;
+                padding: 2pt 30pt;
+            }
+
+            .fretboard {
+                overflow: hidden;
+                //background: #ddd;
+                max-height: 200px;
+
+                svg { height: 100%; }
+            }
         }
+        
     }
 
     .imgDiv {

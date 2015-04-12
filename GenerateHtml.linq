@@ -6,6 +6,7 @@
 
 class Diagram
 {
+	public string Title { get; set; }
 	public int FromFret { get; set; }
 	public int ToFret { get; set; }
 	public string Notes { get; set; }
@@ -17,7 +18,7 @@ class Lesson
 	public string Notes { get; set; } 
 	public string Image { get; set; } 
 	public string[] Variations { get; set; } 
-	public int DiagramColumns { get; set; }
+	//public int DiagramColumns { get; set; }
 	public Diagram[] Diagrams { get; set; }
 }
 
@@ -133,7 +134,7 @@ Dictionary<string, string> CreateLessonHtmlParts(string dir, Chapter chapter)
 {
 	var output = new Dictionary<string, string>();
 	Console.WriteLine("Creating Html templates for {0} lessons", chapter.Lessons.Length);
-	var diagramFormatString = @"        <div class=""fretboard {3}"" data-fromfret=""{0}"" data-tofret=""{1}"" data-notes=""{2}""></div>";
+	var diagramFormatString = @"        <div class=""diagram""><p>{3}</p><div class=""fretboard"" data-fromfret=""{0}"" data-tofret=""{1}"" data-notes=""{2}""></div></div>";
 	
 	foreach (var lesson in chapter.Lessons)
 	{
@@ -166,8 +167,8 @@ Dictionary<string, string> CreateLessonHtmlParts(string dir, Chapter chapter)
 				sb.AppendLine(string.Format(diagramFormatString, 
 					diagram.FromFret, 
 					diagram.ToFret, 
-					diagram.Notes, 
-					"col" + lesson.DiagramColumns));
+					diagram.Notes,
+					diagram.Title));
 			}
 			sb.AppendLine("    </div>");
 		}
@@ -188,9 +189,9 @@ string GenerateChapterFile(string title, string chapterInfo, Dictionary<string, 
 	sb.AppendLine("<title>" + title + "</title>");
 	sb.AppendLine("<link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\">");
 	sb.AppendLine("<script type=\"text/javascript\" src=\"../Fretboardify.js\"></script>");
+	sb.AppendLine("<script>fretboardify.setConfiguration({ lefty: false, strings: 6, defaultColor: 'Black' });</script>");
 	sb.AppendLine("</head>");
 	sb.AppendLine("<body>");
-	sb.AppendLine("<script>fretboardify.setConfiguration({ lefty: false, strings: 6, defaultColor: 'blue' });</script>");
 	
 	sb.AppendLine(chapterInfo);
 	

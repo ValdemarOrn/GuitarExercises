@@ -4,6 +4,11 @@
   padding: 0;
 }
 body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   margin: 0;
   padding: 0;
   font-family: Garamond;
@@ -97,12 +102,21 @@ a:hover {
   margin: 0 auto;
   width: 95%;
 }
-.lesson .diagrams .col2 {
-  width: 49%;
-}
-.lesson .diagrams .fretboard {
+.lesson .diagrams .diagram {
   display: inline-block;
+  position: relative;
+}
+.lesson .diagrams .diagram p {
+  position: absolute;
+  margin: 0;
+  padding: 2pt 30pt;
+}
+.lesson .diagrams .diagram .fretboard {
   overflow: hidden;
+  max-height: 200px;
+}
+.lesson .diagrams .diagram .fretboard svg {
+  height: 100%;
 }
 .lesson .imgDiv {
   overflow: hidden;

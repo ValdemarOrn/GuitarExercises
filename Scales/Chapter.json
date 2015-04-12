@@ -15,10 +15,15 @@
                 "e) 4th Position (A Shape)",
                 "f) 5th Position (G Shape)"
             ],
-            "DiagramColumns" : 2,
+            //"DiagramColumns" : 3,
             "Diagrams": [
-                { "FromFret": 0, "ToFret": 12, "Notes": "6,5,Red;6,7;6,9; 5,5;5,7;5,9; 4,6;4,7,Red;4,9; 3,6;3,7;3,9; 2,7;2,9;2,10,Red; 1,7;1,9;1,10" },
-                { "FromFret": 0, "ToFret": 12, "Notes": "6,4;6,5,Red;6,7; 5,4;5,5;5,7; 4,4;4,6;4,7,Red; 3,4;3,6;3,7; 2,5;2,7; 1,4;1,5,Red;1,7" },
+                
+				/*
+				{ "Title": "a) 3 Note Pattern", "FromFret": 5, "ToFret": 10, "Notes": "6,5,Red;6,7;6,9; 5,5;5,7;5,9; 4,6;4,7,Red;4,9; 3,6;3,7;3,9; 2,7;2,9;2,10,Red; 1,7;1,9;1,10" },
+                { "Title" : "b) 1st Position (E Shape)", "FromFret": 3, "ToFret": 8, "Notes": "6,4;6,5,Red;6,7; 5,4;5,5;5,7; 4,4;4,6;4,7,Red; 3,4;3,6;3,7; 2,5;2,7; 1,4;1,5,Red;1,7" },
+                { "Title" : "c) 2nd Position (D Shape)", "FromFret": 3, "ToFret": 8, "Notes": "6,5;6,7;6,8; 5,5;5,7; 4,4;4,5,Red;4,7; 3,4;3,5;3,7; 2,5;2,7;2,8,Red; 1,5;1,7;1,8" },
+				*/
+				{ "Title" : d) 3rd Position (C Shape)", "FromFret": 3, "ToFret": 8, "Notes": "6,5;6,7;6,8; 5,5;5,7; 4,4;4,5,Red;4,7; 3,4;3,5;3,7; 2,5;2,7;2,8,Red; 1,5;1,7;1,8" },
             ]
         },
         {
