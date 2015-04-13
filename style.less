@@ -111,7 +111,7 @@ a:hover { color: #888; }
     }
     
     .diagrams {
-        padding-top: 20pt;
+        padding-top: 40pt;
         text-align: center;
         page-break-inside: avoid;
         margin: 0 auto;
@@ -130,11 +130,11 @@ a:hover { color: #888; }
 
             .fretboard {
                 overflow: hidden;
-                //background: #ddd;
                 max-height: 200px;
-
                 svg { height: 100%; }
             }
+
+             @media print { .fretboard { max-height: 150px; } }
         }
         
     }

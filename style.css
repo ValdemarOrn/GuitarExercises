@@ -96,7 +96,7 @@ a:hover {
   width: 44%;
 }
 .lesson .diagrams {
-  padding-top: 20pt;
+  padding-top: 40pt;
   text-align: center;
   page-break-inside: avoid;
   margin: 0 auto;
@@ -117,6 +117,11 @@ a:hover {
 }
 .lesson .diagrams .diagram .fretboard svg {
   height: 100%;
+}
+@media print {
+  .lesson .diagrams .diagram .fretboard {
+    max-height: 150px;
+  }
 }
 .lesson .imgDiv {
   overflow: hidden;

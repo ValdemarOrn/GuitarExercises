@@ -15,15 +15,13 @@
                 "e) 4th Position (A Shape)",
                 "f) 5th Position (G Shape)"
             ],
-            //"DiagramColumns" : 3,
             "Diagrams": [
-                
-				/*
 				{ "Title": "a) 3 Note Pattern", "FromFret": 5, "ToFret": 10, "Notes": "6,5,Red;6,7;6,9; 5,5;5,7;5,9; 4,6;4,7,Red;4,9; 3,6;3,7;3,9; 2,7;2,9;2,10,Red; 1,7;1,9;1,10" },
                 { "Title" : "b) 1st Position (E Shape)", "FromFret": 3, "ToFret": 8, "Notes": "6,4;6,5,Red;6,7; 5,4;5,5;5,7; 4,4;4,6;4,7,Red; 3,4;3,6;3,7; 2,5;2,7; 1,4;1,5,Red;1,7" },
                 { "Title" : "c) 2nd Position (D Shape)", "FromFret": 3, "ToFret": 8, "Notes": "6,5;6,7;6,8; 5,5;5,7; 4,4;4,5,Red;4,7; 3,4;3,5;3,7; 2,5;2,7;2,8,Red; 1,5;1,7;1,8" },
-				*/
-				{ "Title" : d) 3rd Position (C Shape)", "FromFret": 3, "ToFret": 8, "Notes": "6,5;6,7;6,8; 5,5;5,7; 4,4;4,5,Red;4,7; 3,4;3,5;3,7; 2,5;2,7;2,8,Red; 1,5;1,7;1,8" },
+				{ "Title" : "d) 3rd Position (C Shape)", "FromFret": 1, "ToFret": 6, "Notes": "5,5,Red;4,4;6,3;6,5;5,4;5,2;6,2;4,2;4,5;3,2;3,4;2,2;2,3,Red;2,5;1,2;1,3;1,5" },
+				{ "Title" : "e) 4th Position (A Shape)", "FromFret": 3, "ToFret": 8, "Notes": "5,5,Red;4,4;6,3;6,5;6,7;5,4;5,7;4,5;4,7;3,4;3,6;3,7,Red;2,5;2,7;2,8;1,5;1,7" },
+				{ "Title" : "f) 5th Position (G Shape)", "FromFret": 1, "ToFret": 6, "Notes": "5,4;4,2;6,2;6,4;6,5,Red;5,2;5,5;4,4;4,6;3,2,Red;3,4;2,2;2,3;2,5;1,2;1,4;1,5,Red" }
             ]
         },
         {
@@ -38,6 +36,14 @@
                 "d) 3rd Position (C Shape)",
                 "e) 4th Position (A Shape)",
                 "f) 5th Position (G Shape)"
+            ],
+			"Diagrams": [
+				{ "Title": "a) 3 Note Pattern", "FromFret": 5, "ToFret": 10, "Notes": "4,9;4,5;6,5,Red;6,7;6,8;5,5;5,7;5,8;4,7,Red;3,5;3,7;3,9;2,6;2,8;2,10,Red;1,7;1,8;1,10" },
+                { "Title" : "b) 1st Position (E Shape)", "FromFret": 4, "ToFret": 9, "Notes": "5,8;4,9;6,5,Red;6,7;6,8;5,5;5,7;4,5;4,7,Red;3,5;3,7;2,5;2,6;2,8;1,5,Red;1,7;1,8" },
+                { "Title" : "c) 2nd Position (D Shape)", "FromFret": 4, "ToFret": 9, "Notes": "4,8;6,6;6,5;3,7;5,6;5,5;6,8;5,8;4,5,Red;4,7;3,5;3,8;2,6;2,8,Red;1,5;1,6;1,8" },
+				{ "Title" : "d) 3rd Position (C Shape)", "FromFret": 2, "ToFret": 7, "Notes": "4,5;4,2;6,3;6,5;6,6;5,5,Red;5,3;4,3;3,2;3,3;3,5;2,3,Red;2,5;2,6;1,3;1,5;1,6" },
+				{ "Title" : "e) 4th Position (A Shape)", "FromFret": 4, "ToFret": 9, "Notes": "4,7;5,8;6,5;6,6;6,8;5,7;5,5,Red;4,5;4,8;3,5;3,7,Red;2,5;2,6;2,8;1,5;1,6;1,8" },
+				{ "Title" : "f) 5th Position (G Shape)", "FromFret": 1, "ToFret": 6, "Notes": "4,5;5,5;6,1;5,2;6,5,Red;6,3;5,3;4,2;4,3;3,2,Red;3,4;3,5;2,3;2,5;2,6;1,3;1,5,Red" }
             ]
         },
         {
@@ -51,7 +57,14 @@
                 "c) 3rd Position",
                 "d) 4th Position",
                 "e) 5th Position"
-            ]
+            ],
+			"Diagrams": [
+				{ "Title": "a) 1st Position", "FromFret": 3, "ToFret": 8, "Notes": "4,7,Red;6,5,Red;6,7;5,4;5,7;4,4;3,4;3,6;2,5;2,7;1,5,Red;1,7" },
+				{ "Title": "b) 2nd Position", "FromFret": 3, "ToFret": 8, "Notes": "4,7;4,5,Red;6,7;5,5;5,7;6,5;3,4;3,7;2,5;2,8,Red;1,5;1,7" },
+				{ "Title": "c) 3rd Position", "FromFret": 1, "ToFret": 6, "Notes": "4,4;4,2;6,5;5,2;5,5,Red;6,2;3,2;3,4;2,3,Red;2,5;1,2;1,5" },
+				{ "Title": "d) 4th Position", "FromFret": 3, "ToFret": 8, "Notes": "4,7;4,4;6,7;5,5,Red;5,7;6,5;3,4;3,7,Red;2,5;2,7;1,5;1,7" },
+				{ "Title": "e) 5th Position", "FromFret": 1, "ToFret": 6, "Notes": "6,5,Red;4,2;6,2;5,2;5,4;4,4;3,2,Red;3,4;2,2;2,5;1,2;1,5,Red" },
+			]
         },
         {
             "Name": "Scales 4 - 5 Minor Pentatonic Scale Forms",
@@ -64,7 +77,14 @@
                 "c) 3rd Position",
                 "d) 4th Position",
                 "e) 5th Position"
-            ]
+            ],
+			"Diagrams": [
+				{ "Title": "a) 1st Position", "FromFret": 4, "ToFret": 9, "Notes": "4,7,Red;6,5,Red;6,8;5,5;5,7;4,5;3,5;3,7;2,5;2,8;1,5,Red;1,8" },
+				{ "Title": "b) 2nd Position", "FromFret": 4, "ToFret": 9, "Notes": "4,8;4,5,Red;6,8;5,5;5,8;6,6;3,5;3,7;2,6;2,8,Red;1,6;1,8" },
+				{ "Title": "c) 3rd Position", "FromFret": 1, "ToFret": 6, "Notes": "4,5;4,3;6,5;5,3;5,5,Red;6,3;3,2;3,5;2,3,Red;2,6;1,3;1,5" },
+				{ "Title": "d) 4th Position", "FromFret": 4, "ToFret": 9, "Notes": "4,7;4,5;6,8;5,5,Red;5,8;6,5;3,5;3,7,Red;2,6;2,8;1,5;1,8" },
+				{ "Title": "e) 5th Position", "FromFret": 1, "ToFret": 6, "Notes": "3,2,Red;6,3;6,5,Red;5,3;5,5;4,2;4,5;3,5;2,3;2,5;1,3;1,5,Red" }
+			]
         },
         {
             "Name": "Scales 5 - Scale Repeated Note Patterns",
