@@ -168,5 +168,13 @@
 				"a) Speed Picking Pattern"
 			]
 		},
+		{
+			"Name" : "Dexterity 18 - Grip Patterns",
+			"Notes" : "",
+			"Image" : "Dexterity 18.png",
+			"Variations" : [
+				"a) Pattern 1"
+			]
+		},
 	]
 }

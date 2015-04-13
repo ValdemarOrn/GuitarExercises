@@ -18,7 +18,6 @@ class Lesson
 	public string Notes { get; set; } 
 	public string Image { get; set; } 
 	public string[] Variations { get; set; } 
-	//public int DiagramColumns { get; set; }
 	public Diagram[] Diagrams { get; set; }
 }
 
