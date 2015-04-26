@@ -65,7 +65,6 @@ void ConvertPdfs(string dir)
 	var files = Directory.GetFiles(dir, "*.pdf");
 	
 	System.Threading.Tasks.Parallel.ForEach(files, file =>
-	//foreach (var file in files)
 	{
 		var input = file;
 		var outputFile = Path.GetFileNameWithoutExtension(file) + ".temp.png";
@@ -188,7 +187,7 @@ string GenerateChapterFile(string title, string chapterInfo, Dictionary<string, 
 	sb.AppendLine("<title>" + title + "</title>");
 	sb.AppendLine("<link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\">");
 	sb.AppendLine("<script type=\"text/javascript\" src=\"../Fretboardify.js\"></script>");
-	sb.AppendLine("<script>fretboardify.setConfiguration({ lefty: false, strings: 6, defaultColor: 'Black' });</script>");
+	sb.AppendLine("<script>fretboardify.setConfiguration({ lefty: true, strings: 6, defaultColor: 'Black' });</script>");
 	sb.AppendLine("</head>");
 	sb.AppendLine("<body>");
 	
